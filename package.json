@@ -1,0 +1,9 @@
+{
+  "name": "React-Portfolio",
+  "version": "1.0.0",
+  "description": "A portfolio for displaying various web applications the author has contributed to.",
+  "main": "index.js",
+  "repository": "https://github.com/RexStrider/React-Portfolio",
+  "author": "Aaron Waterman Rose",
+  "license": "MIT"
+}
