@@ -1,8 +1,8 @@
 import React from 'react';
 
-import About from './About';
-import Portfolio from './Portfolio';
-import Contact from "./Contact";
+import About from './Components/About';
+import Portfolio from './Components/Portfolio';
+import Contact from "./Components/Contact";
 
 function App() {
   return (
