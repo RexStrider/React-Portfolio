@@ -1,9 +1,11 @@
+import './Contact.css';
+
 import React from 'react';
 
 function Contact() {
     return(
         <div className="contact">
-            <h2>Send Me An Email!</h2>
+            <h2>Send Me An Email</h2>
             
             <section>
                 <label>Name</label>
@@ -16,8 +18,12 @@ function Contact() {
             </section>
 
             <section>
-                <label>Comment</label>
+                <label>Message</label>
                 <textarea></textarea>
+            </section>
+
+            <section>
+                <button>Submit</button>
             </section>
         </div>
     )

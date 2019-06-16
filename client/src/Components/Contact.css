@@ -1,0 +1,13 @@
+.contact section {
+    margin: 1%;
+}
+
+label {
+    font-size: 18px;
+}
+
+.contact section textarea {
+    height: 120px;
+
+    margin-top: 1%;
+}

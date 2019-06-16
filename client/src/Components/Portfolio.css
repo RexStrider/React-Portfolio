@@ -1,0 +1,15 @@
+.portfolio {
+    display: flex;
+
+    margin: 2%;
+}
+
+.portfolio section section {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio a:hover {
+    color: blue;
+    text-decoration: underline;
+}
