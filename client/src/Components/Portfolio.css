@@ -1,15 +1,27 @@
-.portfolio {
+.portfolio section {
     display: flex;
-
-    margin: 2%;
 }
 
 .portfolio section section {
     display: flex;
     flex-direction: column;
+
+    /* margin-left: 5px; */
 }
 
 .portfolio a:hover {
     color: blue;
     text-decoration: underline;
+}
+
+.portfolio img {
+    margin-top: 10%;
+    /* margin-right: 50%; */
+
+    height: 200px;
+    width: 200px;
+}
+
+.project {
+    margin-left: 2%;
 }
