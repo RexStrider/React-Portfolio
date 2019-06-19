@@ -1,3 +1,9 @@
-nav section a {
+nav {
+    background-color: darkblue;
+}
+
+.brand-logo {
+    min-width: 300px;
+
     margin-left: 1%;
 }
