@@ -1,3 +1,7 @@
 body {
     background-image: url('../Assets/Images/white-waves.png');
 }
+
+p {
+    font-size: 18px;
+}

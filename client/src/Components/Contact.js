@@ -4,28 +4,28 @@ import React from 'react';
 
 function Contact() {
     return(
-        <div className="contact">
-            <h2>Send Me An Email</h2>
+        <section className="contact">
+            <h2>Contact</h2>
             
             <section>
                 <label>Name</label>
-                <input />
+                <input id='name' />
             </section>
 
             <section>
-                <label>Organization</label>
-                <input />
+                <label>Email</label>
+                <input id='email' />
             </section>
 
             <section>
                 <label>Message</label>
-                <textarea></textarea>
+                <textarea id='message'></textarea>
             </section>
 
             <section>
                 <button>Submit</button>
             </section>
-        </div>
+        </section>
     )
 }
 

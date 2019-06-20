@@ -24,8 +24,8 @@ router.get('/mail', (req, res) => {
             port: 587,
             secure: false, // true for 465, false for other ports
             auth: {
-            user: testAccount.user, // generated ethereal user
-            pass: testAccount.pass // generated ethereal password
+                user: testAccount.user, // generated ethereal user
+                pass: testAccount.pass // generated ethereal password
             }
         });
 
