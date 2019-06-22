@@ -7,19 +7,19 @@ function Header() {
     return(
         <nav>
             <section className='nav-wrapper'>
-                <a href='#' className='brand-logo'>Aaron Waterman Rose</a>
+                <Link to='/' className='brand-logo'>Aaron Waterman Rose</Link>
                 <ul id='nav-mobile' className='right hide-on-med-and-down'>
-                    <li>
+                    <li /*className={window.location.pathname === '/' ? 'active' : ''}*/>
                         <Link to='/'>
                             About
                         </Link>
                     </li>
-                    <li>
+                    <li /*className={window.location.pathname === '/projects' ? 'active' : ''}*/>
                         <Link to='/projects'>
                             Projects
                         </Link>
                     </li>
-                    <li>
+                    <li /*className={window.location.pathname === '/contact' ? 'active' : ''}*/>
                         <Link to='/contact'>
                             Contact
                         </Link>
