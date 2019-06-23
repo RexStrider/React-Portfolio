@@ -2,6 +2,7 @@ import './Contact.css';
 import API from '../Utils/API';
 
 import React, { Component } from 'react';
+import M, { options } from 'materialize-css';
 
 
 class Contact extends Component {
@@ -9,8 +10,16 @@ class Contact extends Component {
         name: '',
         email: '',
         message: '',
-        formMessage: 'Click submit to send a message.'
+        modalMsg: '',
+        errorMsg: ''
     };
+
+    componentDidMount() {
+        document.addEventListener('DOMContentLoaded', () => {
+            const elems = document.querySelectorAll('.modal');
+            this.setState({ modal: M.Modal.init(elems, options) });
+        });
+    }
     
     clickHandler = () => {
         const url = '/api/mail';
@@ -24,13 +33,22 @@ class Contact extends Component {
 
         if (regexEmail.test(data.email)) {
             API.postData(url, data).then(response => {
-                const formMessage = response.message;
+                // const errorMsg = response.message;
+                const modalMsg = response.message;
 
-                this.setState({ name: '', email: '', message: '', formMessage });
+                const elem = document.getElementById('modal1');
+                const instance = M.Modal.getInstance(elem);
+                instance.open();
+
+                this.setState({ name: '', email: '', message: '', modalMsg, errorMsg: '' });
             });
         }
         else {
-            this.setState({ formMessage: 'Please check your email address.' });
+            this.setState({ errorMsg: ' - Please check your email address.' });
+
+            // this.renderModal();
+            // M.Modal.open();
+            // this.state.modal.open();
         }
     }
 
@@ -45,10 +63,18 @@ class Contact extends Component {
     render() {
         return(
             <section className="contact">
-                <p  id='formMessage'
-                    onChange={this.handleInputChange}>
-                    {this.state.formMessage}
-                </p>
+                {/*  Modal Trigger  */}
+                {/* <a className="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> */}
+
+                {/*  Modal Structure  */}
+                <div id="modal1" className="modal">
+                    <div className="modal-content">
+                        <h4>{this.state.modalMsg}</h4>
+                    </div>
+                    <div className="modal-footer">
+                        <a href="#!" className="modal-close waves-effect waves-green btn-flat">Close</a>
+                    </div>
+                </div>
 
                 <h2>Contact</h2>
                 
@@ -62,7 +88,7 @@ class Contact extends Component {
                 </section>
 
                 <section>
-                    <label>Email</label>
+                    <label>Email<span>{this.state.errorMsg}</span></label>
                     <input
                         id='email'
                         value={this.state.email}

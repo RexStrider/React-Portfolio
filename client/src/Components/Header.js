@@ -10,8 +10,8 @@ class Header extends Component {
 
     componentDidMount() {
         document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems, options);
+            const elems = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(elems, options);
         });
     }
 
@@ -22,7 +22,7 @@ class Header extends Component {
                     <section className='nav-wrapper'>
                         <a href='#' className='brand-logo'>Aaron Waterman Rose</a>
 
-                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
 
                         <ul id='nav-mobile' className='right hide-on-med-and-down'>
                             <li /*className={window.location.pathname === '/' ? 'active' : ''}*/>
@@ -44,7 +44,7 @@ class Header extends Component {
                     </section>
                 </nav>
 
-                <ul class="sidenav" id="mobile-demo">
+                <ul className="sidenav" id="mobile-demo">
                     <li /*className={window.location.pathname === '/' ? 'active' : ''}*/>
                         <Link to='/'>
                             About
