@@ -101,11 +101,6 @@ class Contact extends Component {
                 <section>
                     <button onClick={this.clickHandler}>Submit</button>
                 </section>
-
-                {/* <p
-                    id='formMessage'
-                    onChange={this.handleInputChange}
-                >{this.state.formMessage}</p> */}
             </section>
         )
     }
