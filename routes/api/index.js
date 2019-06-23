@@ -10,12 +10,6 @@ router.get('/', (req, res) => {
     res.json({ message: 'hit the api route' });
 });
 
-router.post('/test', (req, res) => {
-    console.log(req.body);
-
-    res.json({ message: 'successfully hit api test route...' });
-})
-
 router.post('/mail', async (req, res) => {
     try{
         const name = req.body.name;
@@ -51,11 +45,11 @@ router.post('/mail', async (req, res) => {
         await transporter.sendMail(mailOptions, (error, result) => {
             if(error) {
                 console.log(error);
-                res.send({ error });
+                res.json({ message: "We are experiencing technical difficulties and were unable to send your message." });
             }
             else {
                 console.log(result);
-                res.json({message: 'send mail executed successfully', result});
+                res.json({ message: 'Your message has been sent.' });
             }
         })
     }

@@ -7,24 +7,32 @@ class Contact extends Component {
     state = {
         name: '',
         email: '',
-        message: ''
+        message: '',
+        formMessage: 'Click submit to send a message.'
+        // formMessage: ''
     };
     
     clickHandler = () => {
-        // console.log( this.state );
+        const url = '/api/mail';
+        const regex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 
-        this.postData('/api/mail', this.state)
-        .then(response => {
-            console.log(response.message);
+        const data = {
+            name: this.state.name,
+            email: this.state.email,
+            message: this.state.message
+        };
 
-            this.setState({
-                name: '',
-                email: '',
-                message: ''
-            })
-        });
+        // error checking on data
+        if (regex.test(data.email)) {
+            this.postData(url, data).then(response => {
+                const formMessage = response.message;
 
-
+                this.setState({ name: '', email: '', message: '', formMessage });
+            });
+        }
+        else {
+            this.setState({ formMessage: 'Please check your email address.' });
+        }
     }
 
     postData = (url = '', data = {}) => {
@@ -50,14 +58,17 @@ class Contact extends Component {
         const { id, value } = event.target;
     
         // Updating the input's state
-        this.setState({
-          [id]: value
-        });
+        this.setState({ [id]: value });
     };
 
     render() {
         return(
             <section className="contact">
+                <p  id='formMessage'
+                    onChange={this.handleInputChange}>
+                    {this.state.formMessage}
+                </p>
+
                 <h2>Contact</h2>
                 
                 <section>
@@ -90,6 +101,11 @@ class Contact extends Component {
                 <section>
                     <button onClick={this.clickHandler}>Submit</button>
                 </section>
+
+                {/* <p
+                    id='formMessage'
+                    onChange={this.handleInputChange}
+                >{this.state.formMessage}</p> */}
             </section>
         )
     }
