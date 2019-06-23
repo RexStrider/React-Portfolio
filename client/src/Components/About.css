@@ -8,3 +8,17 @@
 .about img {
     margin-right: 2%;
 }
+
+@media (max-width: 992px) {
+    .about {
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .about img {
+        max-height: 400px;
+        max-width: 400px !important;
+    }
+}

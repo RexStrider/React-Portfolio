@@ -35,3 +35,10 @@
 .project {
     margin-left: 2%;
 }
+
+@media (max-width: 992px) {
+    .portfolio section {
+        flex-direction: column;
+        align-items: center;
+    }
+}

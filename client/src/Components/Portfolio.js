@@ -19,7 +19,7 @@ class Project {
 const projects = [
     new Project(
         "Parent Maps",
-        "A community based database where parents can post reviews of shops, parks, restaurants, and other locations.",
+        "A community based database where parents can post reviews on various places.",
         logo_parent_maps,
         "https://github.com/RexStrider/berkeleyfamilyfriendly",
         "https://gtresquire.github.io/berkeleyfamilyfriendly/"
@@ -33,7 +33,7 @@ const projects = [
     ),
     new Project(
         "Flip Search",
-        "A click to search product demo for finding statistics in the Bay Area for re-selling houses.",
+        "A click to search product demo for re-selling houses in the Bay Area.",
         logo_flip_search,
         "https://github.com/RexStrider/flipsearch",
         "https://flipsearch.herokuapp.com/main"
