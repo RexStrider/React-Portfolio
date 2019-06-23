@@ -6,19 +6,20 @@
 }
 
 .about img {
-    margin-right: 2%;
+    margin-right: 3%;
+}
+
+.about img {
+    max-height: 400px;
+    max-width: 400px !important;
 }
 
 @media (max-width: 992px) {
     .about {
-        /* display: flex; */
+        margin-right: 0%;
+
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-    }
-
-    .about img {
-        max-height: 400px;
-        max-width: 400px !important;
     }
 }

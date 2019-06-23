@@ -2,12 +2,23 @@
     margin: 1%;
 }
 
-label {
+.contact section label {
     font-size: 18px;
+    color: black;
 }
 
 .contact section textarea {
-    height: 120px;
+    background-color: white;
 
+    height: 120px;
     margin-top: 1%;
+}
+
+.contact section button {
+    height: 30px;
+    width: 70px;
+}
+
+.contact section button:hover {
+    cursor: pointer;
 }
