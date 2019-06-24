@@ -33,7 +33,6 @@ class Contact extends Component {
 
         if (regexEmail.test(data.email)) {
             API.postData(url, data).then(response => {
-                // const errorMsg = response.message;
                 const modalMsg = response.message;
 
                 const elem = document.getElementById('modal1');
@@ -44,19 +43,12 @@ class Contact extends Component {
             });
         }
         else {
-            this.setState({ errorMsg: ' - Please check your email address.' });
-
-            // this.renderModal();
-            // M.Modal.open();
-            // this.state.modal.open();
+            this.setState({ errorMsg: ' - Invalid format, please check your email address.' });
         }
     }
 
     handleInputChange = event => {
-        // Getting the value and name of the input which triggered the change
         const { id, value } = event.target;
-    
-        // Updating the input's state
         this.setState({ [id]: value });
     };
 
@@ -72,7 +64,7 @@ class Contact extends Component {
                         <h4>{this.state.modalMsg}</h4>
                     </div>
                     <div className="modal-footer">
-                        <a href="#!" className="modal-close waves-effect waves-green btn-flat">Close</a>
+                        <a className="modal-close waves-effect waves-green btn-flat">Close</a>
                     </div>
                 </div>
 
@@ -106,7 +98,14 @@ class Contact extends Component {
                 </section>
 
                 <section>
-                    <button onClick={this.clickHandler}>Submit</button>
+                    <button
+                        onClick={this.clickHandler}
+                        className="btn waves-effect waves-light"
+                        type="submit"
+                        name="action">
+                        Submit
+                        <i class="material-icons right">send</i>
+                    </button>
                 </section>
             </section>
         )

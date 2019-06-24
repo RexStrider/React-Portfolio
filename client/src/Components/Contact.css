@@ -19,8 +19,15 @@
 }
 
 .contact section button {
-    height: 30px;
-    width: 70px;
+    background-color: mediumblue;
+}
+
+.contact section button:hover {
+    background-color: blue;
+}
+
+.contact section button:focus {
+    background-color: darkblue;
 }
 
 .contact section button:hover {

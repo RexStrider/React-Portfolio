@@ -20,9 +20,9 @@ class Header extends Component {
             <section>
                 <nav>
                     <section className='nav-wrapper'>
-                        <a href='#' className='brand-logo'>Aaron Waterman Rose</a>
+                        <Link to='/' className='brand-logo'>Aaron Waterman Rose</Link>
 
-                        <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+                        <a data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
 
                         <ul id='nav-mobile' className='right hide-on-med-and-down'>
                             <li /*className={window.location.pathname === '/' ? 'active' : ''}*/>
