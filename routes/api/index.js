@@ -2,12 +2,15 @@ const express = require("express");
 const nodemailer = require("nodemailer");
 
 const keys = require('../../config/keys.js');
+const port = process.env.PORT || 5050;
 
 const router = express.Router();
 
 
+
+
 router.get('/', (req, res) => {
-    res.json({ message: 'hit the api route' });
+    res.json({ message: 'You hit the api test route.' });
 });
 
 router.post('/mail', async (req, res) => {
@@ -19,7 +22,7 @@ router.post('/mail', async (req, res) => {
         let transporter = await nodemailer.createTransport({
             service: 'gmail',
             secure: false,
-            port: 7337,
+            port,
             auth: {
                 user: keys.portfolioAddress,
                 pass: keys.portfolioPassword

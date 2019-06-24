@@ -7,3 +7,7 @@ nav {
 
     margin-left: 1%;
 }
+
+.brand-logo:hover {
+    cursor: default;
+}

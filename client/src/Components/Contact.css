@@ -2,6 +2,10 @@
     margin: 1%;
 }
 
+.contact h2:hover {
+    cursor: default;
+}
+
 .contact section label {
     font-size: 18px;
     color: black;

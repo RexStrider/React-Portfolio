@@ -31,18 +31,23 @@ class Contact extends Component {
             message: this.state.message
         };
 
+        const elem = document.getElementById('modal1');
+        const instance = M.Modal.getInstance(elem);
+
+        this.setState({ modalMsg: 'Please wait patiently while your message is being sent.', errorMsg: '' });
+
+        instance.open();
+
         if (regexEmail.test(data.email)) {
             API.postData(url, data).then(response => {
-                const modalMsg = response.message;
-
-                const elem = document.getElementById('modal1');
-                const instance = M.Modal.getInstance(elem);
+                instance.close();
+                const modalMsg = response.message;                
+                this.setState({ name: '', email: '', message: '', modalMsg, errorMsg: '' });                
                 instance.open();
-
-                this.setState({ name: '', email: '', message: '', modalMsg, errorMsg: '' });
             });
         }
         else {
+            instance.close();
             this.setState({ errorMsg: ' - Invalid format, please check your email address.' });
         }
     }
@@ -55,10 +60,6 @@ class Contact extends Component {
     render() {
         return(
             <section className="contact">
-                {/*  Modal Trigger  */}
-                {/* <a className="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> */}
-
-                {/*  Modal Structure  */}
                 <div id="modal1" className="modal">
                     <div className="modal-content">
                         <h4>{this.state.modalMsg}</h4>
@@ -69,7 +70,7 @@ class Contact extends Component {
                 </div>
 
                 <h2>Contact</h2>
-                
+
                 <section>
                     <label>Name</label>
                     <input
@@ -104,7 +105,7 @@ class Contact extends Component {
                         type="submit"
                         name="action">
                         Submit
-                        <i class="material-icons right">send</i>
+                        <i className="material-icons right">send</i>
                     </button>
                 </section>
             </section>
