@@ -17,7 +17,7 @@ class Contact extends Component {
     componentDidMount() {
         document.addEventListener('DOMContentLoaded', () => {
             const elems = document.querySelectorAll('.modal');
-            this.setState({ modal: M.Modal.init(elems, options) });
+            M.Modal.init(elems, options);
         });
     }
     
@@ -65,7 +65,7 @@ class Contact extends Component {
                         <h4>{this.state.modalMsg}</h4>
                     </div>
                     <div className="modal-footer">
-                        <a className="modal-close waves-effect waves-green btn-flat">Close</a>
+                        <section className="modal-close waves-effect waves-green btn-flat">Close</section>
                     </div>
                 </div>
 

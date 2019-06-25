@@ -1,0 +1,24 @@
+body, #root, #container, #section {
+    display: flex;
+    min-height: calc(100vh - 65.6px);
+    flex-direction: column;
+}
+
+.page-footer {
+    background-color: darkblue;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    flex: 1 0 auto;
+}
+
+.page-footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-footer .container h5 {
+    margin: 0;
+}

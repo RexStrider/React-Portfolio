@@ -43,7 +43,6 @@ function Portfolio() {
 
             { renderContent(projects) }
 
-            <footer />
         </section>
     )
 }
