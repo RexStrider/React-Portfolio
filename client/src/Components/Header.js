@@ -1,5 +1,5 @@
 import './Header.css';
-import M, { options } from 'materialize-css';
+import M from 'materialize-css';
 // import 'https://fonts.googleapis.com/icon?family=Material+Icons'
 
 // import React from 'react';
@@ -11,7 +11,7 @@ class Header extends Component {
     componentDidMount() {
         document.addEventListener('DOMContentLoaded', function() {
             const elems = document.querySelectorAll('.sidenav');
-            M.Sidenav.init(elems, options);
+            M.Sidenav.init(elems);
         });
     }
 

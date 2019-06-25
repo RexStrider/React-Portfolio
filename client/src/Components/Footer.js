@@ -6,7 +6,9 @@ function Footer() {
     return (
         <footer className="page-footer">
             <section className='container'>
-                <h5 className="white-text">arwaterman@gmail.com</h5>
+                <a href='mailto:arwaterman@gmail.com'>
+                    <h5 className="white-text">arwaterman@gmail.com</h5>
+                </a>
             </section>
         </footer>
     )

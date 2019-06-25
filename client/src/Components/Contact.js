@@ -2,7 +2,7 @@ import './Contact.css';
 import API from '../Utils/API';
 
 import React, { Component } from 'react';
-import M, { options } from 'materialize-css';
+import M from 'materialize-css';
 
 
 class Contact extends Component {
@@ -17,7 +17,7 @@ class Contact extends Component {
     componentDidMount() {
         document.addEventListener('DOMContentLoaded', () => {
             const elems = document.querySelectorAll('.modal');
-            M.Modal.init(elems, options);
+            M.Modal.init(elems);
         });
     }
     
