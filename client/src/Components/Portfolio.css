@@ -41,10 +41,6 @@
     margin-left: 2%;
 }
 
-/* .portfolio footer {
-    height: 100px;
-} */
-
 @media (max-width: 992px) {
     .portfolio section {
         flex-direction: column;
