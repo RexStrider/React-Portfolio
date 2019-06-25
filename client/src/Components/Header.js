@@ -18,7 +18,7 @@ class Header extends Component {
     }
 
     handleClick = event => {
-        // force header to re-render and set an active class to one of the links below
+        // forces header to re-render and set an active class to one of the links below
         this.setState({  });
     }
 
