@@ -22,8 +22,6 @@ class Header extends Component {
         this.setState({  });
     }
 
-    
-
     render () {
         console.log('render', window.location.pathname);
         return(
