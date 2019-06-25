@@ -7,6 +7,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class Header extends Component {
+    // state = {  }
+
 
     componentDidMount() {
         document.addEventListener('DOMContentLoaded', function() {
@@ -15,7 +17,15 @@ class Header extends Component {
         });
     }
 
+    handleClick = event => {
+        // force header to re-render and set an active class to one of the links below
+        this.setState({  });
+    }
+
+    
+
     render () {
+        console.log('render', window.location.pathname);
         return(
             <section>
                 <nav>
@@ -25,18 +35,18 @@ class Header extends Component {
                         <Link to='' data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></Link>
 
                         <ul id='nav-mobile' className='right hide-on-med-and-down'>
-                            <li /*className={window.location.pathname === '/' ? 'active' : ''}*/>
-                                <Link to='/'>
+                            <li className={window.location.pathname === '/' ? 'active' : ''}>
+                                <Link to='/' onClick={this.handleClick}>
                                     About
                                 </Link>
                             </li>
-                            <li /*className={window.location.pathname === '/projects' ? 'active' : ''}*/>
-                                <Link to='/projects'>
+                            <li className={window.location.pathname === '/projects' ? 'active' : ''}>
+                                <Link to='/projects' onClick={this.handleClick}>
                                     Projects
                                 </Link>
                             </li>
-                            <li /*className={window.location.pathname === '/contact' ? 'active' : ''}*/>
-                                <Link to='/contact'>
+                            <li className={window.location.pathname === '/contact' ? 'active' : ''}>
+                                <Link to='/contact' onClick={this.handleClick}>
                                     Contact
                                 </Link>
                             </li>
@@ -45,18 +55,18 @@ class Header extends Component {
                 </nav>
 
                 <ul className="sidenav" id="mobile-demo">
-                    <li /*className={window.location.pathname === '/' ? 'active' : ''}*/>
-                        <Link to='/'>
+                    <li className={window.location.pathname === '/' ? 'active' : ''}>
+                        <Link to='/' onClick={this.handleClick}>
                             About
                         </Link>
                     </li>
-                    <li /*className={window.location.pathname === '/projects' ? 'active' : ''}*/>
-                        <Link to='/projects'>
+                    <li className={window.location.pathname === '/projects' ? 'active' : ''}>
+                        <Link to='/projects' onClick={this.handleClick}>
                             Projects
                         </Link>
                     </li>
-                    <li /*className={window.location.pathname === '/contact' ? 'active' : ''}*/>
-                        <Link to='/contact'>
+                    <li className={window.location.pathname === '/contact' ? 'active' : ''}>
+                        <Link to='/contact' onClick={this.handleClick}>
                             Contact
                         </Link>
                     </li>
