@@ -10,7 +10,9 @@ function About() {
 
             <section>
                 <h2>About Myself</h2>
-                <p>Motivated web developer with well rounded experience in MERN development, object-oriented and user-centered design. Developed websites from scratch. Experienced in working with a team using the AGILE methodology.</p>
+                <p>Motivated web developer with well rounded experience in MERN stack, object-oriented and user-centered design.</p>
+                <p>Developed websites from scratch.</p>
+                <p>Experienced in working with a team using the AGILE methodology.</p>
             </section>
         </div>
     );
