@@ -13,13 +13,6 @@ class Contact extends Component {
         modalMsg: '',
         errorMsg: ''
     };
-
-    componentDidMount() {
-        document.addEventListener('DOMContentLoaded', () => {
-            const elems = document.querySelectorAll('.modal');
-            M.Modal.init(elems);
-        });
-    }
     
     clickHandler = () => {
         const url = '/api/mail';
@@ -32,7 +25,7 @@ class Contact extends Component {
         };
 
         const elem = document.getElementById('modal1');
-        const instance = M.Modal.getInstance(elem);
+        const instance = M.Modal.init(elem);
 
         this.setState({ modalMsg: 'Please wait patiently while your message is being sent.', errorMsg: '' });
 
