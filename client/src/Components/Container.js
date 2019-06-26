@@ -18,7 +18,7 @@ function Container() {
           <Route exact path="/" component={About} />
           <Route exact path="/projects" component={Portfolio} />
           <Route exact path="/contact" component={Contact} />
-          <section id='push' />
+          <section id='push-footer' />
         </section>
       </BrowserRouter>
       <Footer />

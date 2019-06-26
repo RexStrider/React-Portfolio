@@ -12,10 +12,12 @@
 .about img {
     max-height: 360px;
     max-width: 360px !important;
+
+    margin-bottom: 10px;
 }
 
 .about section h2 {
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 30px;
 }
 

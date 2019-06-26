@@ -13,11 +13,11 @@ body, #root, #container, #section {
     flex: 1 0 auto;
 }
 
-.page-footer .container {
+/* .page-footer .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-}
+} */
 
 .page-footer .container a h5 {
     margin: 0;
