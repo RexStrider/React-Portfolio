@@ -1,6 +1,7 @@
 import logo_study_live from '../Assets/Images/study_live.png';
 import logo_flip_search from '../Assets/Images/flip_search.png';
 import logo_parent_maps from '../Assets/Images/parent_maps.png';
+import logo_crystals_collector from '../Assets/Images/crystals_collector.png'
 
 class Project {
     constructor(title, description, logo, github_url, demo_url) {
@@ -33,6 +34,13 @@ const projects = [
         logo_flip_search,
         "https://github.com/RexStrider/flipsearch",
         "https://flipsearch.herokuapp.com/main"
+    ),
+    new Project(
+        "Crystals Collector",
+        "A guessing game where you collect the crystals to get points and try to reach the target number.",
+        logo_crystals_collector,
+        "https://github.com/RexStrider/Crystals-Collector",
+        "https://rexstrider.github.io/Crystals-Collector"
     )
 ]
 
