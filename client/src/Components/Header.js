@@ -21,7 +21,6 @@ class Header extends Component {
     }
 
     render () {
-        console.log('render', window.location.pathname);
         return(
             <section>
                 <nav>
