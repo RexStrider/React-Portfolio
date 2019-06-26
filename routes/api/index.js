@@ -6,13 +6,6 @@ const port = process.env.PORT || 5050;
 
 const router = express.Router();
 
-
-
-
-router.get('/', (req, res) => {
-    res.json({ message: 'You hit the api test route.' });
-});
-
 router.post('/mail', async (req, res) => {
     try{
         const name = req.body.name;
