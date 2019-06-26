@@ -13,7 +13,6 @@ function About() {
                 <h2>About Myself</h2>
                 <p>I am a motivated web-developer with well rounded experience in the MERN stack.</p>
                 <p>I've developed various web applications from the ground up, and worked with a team to efficiently build on a variety of projects.</p>
-                
             </section>
         </div>
     );
