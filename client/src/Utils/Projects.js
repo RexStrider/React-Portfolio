@@ -37,7 +37,7 @@ const projects = [
     ),
     new Project(
         "Crystals Collector",
-        "A guessing game where you collect the crystals to get points and try to reach the target number.",
+        "A guessing game where you collect crystals to get points and try to reach the target number.",
         logo_crystals_collector,
         "https://github.com/RexStrider/Crystals-Collector",
         "https://rexstrider.github.io/Crystals-Collector"
