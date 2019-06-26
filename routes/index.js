@@ -1,23 +1,11 @@
 const express = require("express");
-const apiRoutes = require("./api");
-const path = require('path');
-
 const router = express.Router();
-
+const apiRoutes = require("./api");
 
 router.use("/api", apiRoutes);
 
-// Add route to react application
-if (process.env.NODE_ENV === "production") {
-    router.use(express.static("client/build"));
-    router.get("/*", function(req, res) {
-      res.sendFile(path.join(__dirname, "/client/build/index.html"));
-    });
-} else {
-    router.use(express.static(path.join(__dirname, '/client/public')));
-    router.get("/*", function(req, res) {
-      res.sendFile(path.join(__dirname, "/client/public/index.html"));
-    });
-}
+router.get('/', (req, res) => {
+    res.send({ message: 'Congratulations, you found the test route!'});
+});
 
 module.exports = router;
