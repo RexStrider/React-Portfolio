@@ -1,5 +1,5 @@
 import logo_study_live from '../Assets/Images/study_live.png';
-import logo_flip_search from '../Assets/Images/flip_search.PNG';
+import logo_flip_search from '../Assets/Images/flip_search.png';
 import logo_parent_maps from '../Assets/Images/parent_maps.png';
 import logo_crystals_collector from '../Assets/Images/crystals_collector.png'
 
