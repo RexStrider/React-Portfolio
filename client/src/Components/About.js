@@ -1,7 +1,6 @@
 import './About.css';
 
 import React from 'react';
-import { Link } from 'react-router-dom';
 import portfolio_pic from '../Assets/Images/portfolio_pic.jpg';
 
 function About() {
