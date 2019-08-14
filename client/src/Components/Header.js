@@ -54,10 +54,28 @@ class Header extends Component {
                                 </Link>
                             </li>
                         </ul>
+
+                        <ul className="sidenav" id="mobile-demo">
+                            <li className={window.location.pathname === '/' ? 'active' : ''}>
+                                <Link to='/' onClick={this.handleClick}>
+                                    About
+                                </Link>
+                            </li>
+                            <li className={window.location.pathname === '/projects' ? 'active' : ''}>
+                                <Link to='/projects' onClick={this.handleClick}>
+                                    Projects
+                                </Link>
+                            </li>
+                            <li className={window.location.pathname === '/contact' ? 'active' : ''}>
+                                <Link to='/contact' onClick={this.handleClick}>
+                                    Contact
+                                </Link>
+                            </li>
+                        </ul>
                     </section>
                 </nav>
 
-                <ul className="sidenav" id="mobile-demo">
+                {/* <ul className="sidenav" id="mobile-demo">
                     <li className={window.location.pathname === '/' ? 'active' : ''}>
                         <Link to='/' onClick={this.handleClick}>
                             About
@@ -73,7 +91,7 @@ class Header extends Component {
                             Contact
                         </Link>
                     </li>
-                </ul>
+                </ul> */}
             </section>
         )
     }
