@@ -55,7 +55,7 @@ class Header extends Component {
                             </li>
                         </ul>
 
-                        <ul className="sidenav" id="mobile-demo">
+                        {/* <ul className="sidenav" id="mobile-demo">
                             <li className={window.location.pathname === '/' ? 'active' : ''}>
                                 <Link to='/' onClick={this.handleClick}>
                                     About
@@ -71,11 +71,11 @@ class Header extends Component {
                                     Contact
                                 </Link>
                             </li>
-                        </ul>
+                        </ul> */}
                     </section>
                 </nav>
 
-                {/* <ul className="sidenav" id="mobile-demo">
+                <ul className="sidenav" id="mobile-demo">
                     <li className={window.location.pathname === '/' ? 'active' : ''}>
                         <Link to='/' onClick={this.handleClick}>
                             About
@@ -91,7 +91,7 @@ class Header extends Component {
                             Contact
                         </Link>
                     </li>
-                </ul> */}
+                </ul>
             </section>
         )
     }
