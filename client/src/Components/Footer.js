@@ -17,7 +17,7 @@ function Footer() {
                         </a>
                     </section>
 
-                    <section className='col m4 s4'>
+                    <section className='col m4 s4 offset-s1'>
                         <a href='https://www.linkedin.com/in/arwaterman'>
                             <h5 className='white-text'><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</h5>
                         </a>

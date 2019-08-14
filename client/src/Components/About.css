@@ -37,5 +37,9 @@
     .about img {
         max-height: 260px;
         max-width: 260px !important;
+        margin-right: 0;
+    }
+    .about {
+        margin-right: 0;
     }
 }
