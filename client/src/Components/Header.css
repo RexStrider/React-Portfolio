@@ -12,7 +12,7 @@ nav {
     cursor: default;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 450px) {
     nav .brand-logo {
         font-size: 1.6rem;
         margin-left: 22%;
