@@ -35,7 +35,7 @@
 
 @media (max-width: 450px) {
     .about img {
-        max-height: 280px;
-        max-width: 280px !important;
+        max-height: 260px;
+        max-width: 260px !important;
     }
 }
