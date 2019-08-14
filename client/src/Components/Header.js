@@ -18,6 +18,14 @@ class Header extends Component {
     handleClick = () => {
         // forces header to re-render and set an active class to one of the links below
         this.setState({  });
+
+        // close sidenav after clicking on menu
+        const elems = document.querySelectorAll('.sidenav');
+        const sidenav = M.Sidenav.getInstance(elems[0]);
+        if (sidenav.isOpen) {
+            sidenav.close();
+        }
+        
     }
 
     render () {

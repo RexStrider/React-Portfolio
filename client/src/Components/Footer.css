@@ -14,9 +14,17 @@ body, #root, #container, #section {
 }
 
 .page-footer .container a h5 {
+    width: 120px;
     margin: 0;
 }
 
 .page-footer .container a h5:hover {
     color: violet !important;
+}
+
+@media only screen and (max-width: 500px) {
+    .page-footer .container a h5 {
+        font-size: 1.4rem;
+        width: 100px;
+    }
 }

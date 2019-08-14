@@ -11,3 +11,9 @@ nav {
 .brand-logo:hover {
     cursor: default;
 }
+
+@media only screen and (max-width: 500px) {
+    nav .brand-logo {
+        font-size: 1.8rem;
+    }
+}
