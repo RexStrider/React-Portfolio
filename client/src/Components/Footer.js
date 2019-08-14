@@ -11,7 +11,7 @@ function Footer() {
             <section className='container'>
                 <section className='row'>
 
-                    <section className='col s4 offset-s1'>
+                    <section className='col s4 offset-m1 offset-s0'>
                         <a href='mailto:arwaterman@gmail.com'>
                             <h5 className="white-text"><FontAwesomeIcon icon={faGooglePlus} /> Gmail</h5>
                         </a>
