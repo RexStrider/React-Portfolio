@@ -11,13 +11,13 @@ function Footer() {
             <section className='container'>
                 <section className='row'>
 
-                    <section className='col m4 s3 offset-m1 offset-s0'>
+                    <section className='col m4 s4 offset-m1 offset-s0'>
                         <a href='mailto:arwaterman@gmail.com'>
                             <h5 className="white-text"><FontAwesomeIcon icon={faGooglePlus} /> Gmail</h5>
                         </a>
                     </section>
 
-                    <section className='col m4 s4 offset-s1'>
+                    <section className='col m4 s4'>
                         <a href='https://www.linkedin.com/in/arwaterman'>
                             <h5 className='white-text'><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</h5>
                         </a>
