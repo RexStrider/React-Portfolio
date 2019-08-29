@@ -31,7 +31,7 @@ body, #root, #container, #section {
 
 @media only screen and (max-width: 450px) {
     .page-footer .container a h5 {
-        font-size: 0.9rem;
-        width: 80px;
+        font-size: 0.8rem;
+        /* width: 80px; */
     }
 }
