@@ -3,7 +3,8 @@ import './Footer.css';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGooglePlus, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+// import { faFileCertificate } from '@fortawesom'
+
 
 function Footer() {
     return (
@@ -11,19 +12,25 @@ function Footer() {
             <section className='container'>
                 <section className='row'>
 
-                    <section className='col m4 s4 offset-m1 offset-s0'>
+                    <section className="col m3 s3">
+                        <a href="https://drive.google.com/file/d/1l6Z-YISQytFETajk8QvrziUKKiBisGZb/preview">
+                        <h5 className="white-text">{/*<FontAwesomeIcon icon={} />*/} Resume</h5>
+                        </a>
+                    </section>
+
+                    <section className='col m3 s3'>
                         <a href='mailto:arwaterman@gmail.com'>
                             <h5 className="white-text"><FontAwesomeIcon icon={faGooglePlus} /> Gmail</h5>
                         </a>
                     </section>
 
-                    <section className='col m4 s4'>
+                    <section className='col m3 s3'>
                         <a href='https://www.linkedin.com/in/arwaterman'>
                             <h5 className='white-text'><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</h5>
                         </a>
                     </section>
 
-                    <section className='col m3 s4'>
+                    <section className='col m3 s3'>
                         <a href='https://github.com/RexStrider?tab=repositories'>
                             <h5 className='white-text'><FontAwesomeIcon icon={faGithub} /> GitHub</h5>
                         </a>

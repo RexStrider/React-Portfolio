@@ -7,6 +7,7 @@ import Header from './Header';
 import About from './About';
 import Portfolio from './Portfolio';
 import Contact from "./Contact";
+import Resume from "./Resume";
 import Footer from "./Footer";
 
 function Container() {
@@ -18,6 +19,7 @@ function Container() {
           <Route exact path="/" component={About} />
           <Route exact path="/projects" component={Portfolio} />
           <Route exact path="/contact" component={Contact} />
+          <Route exact path="/resume" component={Resume} />
           <section id='push-footer' />
         </section>
       </BrowserRouter>
