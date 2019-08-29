@@ -22,6 +22,13 @@ body, #root, #container, #section {
     color: violet !important;
 }
 
+@media only screen and (max-width: 690px) {
+    .page-footer .container a h5 {
+        font-size: 1.3rem;
+        width: 90px;
+    }
+}
+
 @media only screen and (max-width: 450px) {
     .page-footer .container a h5 {
         font-size: 1.1rem;
