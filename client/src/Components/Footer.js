@@ -13,7 +13,7 @@ function Footer() {
                 <section className='row'>
 
                     <section className="col m3 s3">
-                        <a href="https://drive.google.com/file/d/1l6Z-YISQytFETajk8QvrziUKKiBisGZb/preview">
+                        <a href="https://drive.google.com/file/d/1KNATWq7A3JM2Dkik4omUl6tupUX0gOQU/preview">
                             <h5 className="white-text"><FontAwesomeIcon icon={faFilePdf} /> Resume</h5>
                         </a>
                     </section>
