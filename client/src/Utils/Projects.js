@@ -1,7 +1,7 @@
 import logo_study_live from '../Assets/Images/study_live.png';
 import logo_flip_search from '../Assets/Images/flip_search.png';
 import logo_parent_maps from '../Assets/Images/parent_maps.png';
-import logo_crystals_collector from '../Assets/Images/crystals_collector.png';
+// import logo_crystals_collector from '../Assets/Images/crystals_collector.png';
 import logo_forest_initiative from '../Assets/Images/forest-initiative.png';
 
 class Project {
@@ -59,17 +59,21 @@ const projects = [
         "https://github.com/RexStrider/flipsearch",
         "https://flipsearch.herokuapp.com/main",
         [
-            ""
+            "Designed and implemented map UI using Geo Json data of the Bay Area",
+            "Set up click-to-search feature between Google Map API and the NodeJS back-end"
         ]
-    ),
-    new Project(
-        "Crystals Collector",
-        "A guessing game where you collect crystals to get points and try to reach the target number.",
-        logo_crystals_collector,
-        "https://github.com/RexStrider/Crystals-Collector",
-        "https://rexstrider.github.io/Crystals-Collector",
-        []
     )
+    // ),
+    // new Project(
+    //     "Crystals Collector",
+    //     "A guessing game where you collect crystals to get points and try to reach the target number.",
+    //     logo_crystals_collector,
+    //     "https://github.com/RexStrider/Crystals-Collector",
+    //     "https://rexstrider.github.io/Crystals-Collector",
+    //     [
+    //         "Desgined UI and game logic"
+    //     ]
+    // )
 ]
 
 export default projects;
