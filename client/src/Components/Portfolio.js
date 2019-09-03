@@ -14,6 +14,10 @@ function renderProject(project) {
             <section className='project'>
                 <h2>{project.title}</h2>
                 <p>{project.description}</p>
+                <h3>Contributions</h3>
+                <ul>
+                    {project.renderContributions()}
+                </ul>
                 <section>
                     <a href={project.github_url}>
                         {project.title} Github Repository
