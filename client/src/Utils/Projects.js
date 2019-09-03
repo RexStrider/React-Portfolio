@@ -4,6 +4,8 @@ import logo_parent_maps from '../Assets/Images/parent_maps.png';
 // import logo_crystals_collector from '../Assets/Images/crystals_collector.png';
 import logo_forest_initiative from '../Assets/Images/forest-initiative.png';
 
+import React from 'react';
+
 class Project {
     constructor(title, description, logo, github_url, demo_url, contributions) {
         this.title = title;
@@ -12,6 +14,16 @@ class Project {
         this.github_url = github_url;
         this.demo_url = demo_url;
         this.contributions=contributions;
+    }
+
+    renderContributions() {
+        const ary=[];
+
+        for (const key in this.contributions) {
+            ary.push(<li key={key}>{this.contributions[key]}</li>);
+        }
+
+        return ary;
     }
 }
 
