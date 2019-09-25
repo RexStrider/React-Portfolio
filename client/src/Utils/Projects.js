@@ -36,7 +36,9 @@ const projects = [
         "https://github.com/RexStrider/Civic-Initiative",
         "https://civic-initiative.herokuapp.com/",
         [
-            ""
+            "Set up back-end api with Google Civic Information and News API",
+            "Designed and implemented front-end UI and flow of the application",
+            "Conceptualized, created, and deployed the application"
         ]
     ),
     new Project (
