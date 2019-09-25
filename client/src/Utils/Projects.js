@@ -1,8 +1,9 @@
 import logo_study_live from '../Assets/Images/study_live.png';
-import logo_flip_search from '../Assets/Images/flip_search.png';
+// import logo_flip_search from '../Assets/Images/flip_search.png';
 import logo_parent_maps from '../Assets/Images/parent_maps.png';
 // import logo_crystals_collector from '../Assets/Images/crystals_collector.png';
 import logo_forest_initiative from '../Assets/Images/forest-initiative.png';
+import logo_civic_initiative from '../Assets/Images/civic-initiative.png'
 
 import React from 'react';
 
@@ -28,6 +29,16 @@ class Project {
 }
 
 const projects = [
+    new Project(
+        "Civic Initiative",
+        "A search engine and information hub for information about your political representatives.",
+        logo_civic_initiative,
+        "https://github.com/RexStrider/Civic-Initiative",
+        "https://civic-initiative.herokuapp.com/",
+        [
+            ""
+        ]
+    ),
     new Project (
         "Forest Initiative",
         "A one stop website for learning about the state of our wilderness and getting in contact with our representatives.",
@@ -63,18 +74,19 @@ const projects = [
             "Designed and implemented the chat UI and back-end",
             "Tested and debugged critical UI components and back-end features during development and deployment"
         ]
-    ),
-    new Project(
-        "Flip Search",
-        "A click to search product demo for re-selling houses in the Bay Area.",
-        logo_flip_search,
-        "https://github.com/RexStrider/flipsearch",
-        "https://flipsearch.herokuapp.com/main",
-        [
-            "Designed and implemented map UI using Geo Json data of the Bay Area",
-            "Set up click-to-search feature between Google Map API and the NodeJS back-end"
-        ]
     )
+    // ),
+    // new Project(
+    //     "Flip Search",
+    //     "A click to search product demo for re-selling houses in the Bay Area.",
+    //     logo_flip_search,
+    //     "https://github.com/RexStrider/flipsearch",
+    //     "https://flipsearch.herokuapp.com/main",
+    //     [
+    //         "Designed and implemented map UI using Geo Json data of the Bay Area",
+    //         "Set up click-to-search feature between Google Map API and the NodeJS back-end"
+    //     ]
+    // )
     // ),
     // new Project(
     //     "Crystals Collector",
