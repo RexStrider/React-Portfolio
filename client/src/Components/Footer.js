@@ -31,7 +31,7 @@ function Footer() {
                     </section>
 
                     <section className='col m3 s3'>
-                        <a href='https://github.com/RexStrider?tab=repositories'>
+                        <a href='https://github.com/RexStrider'>
                             <h5 className='white-text'><FontAwesomeIcon icon={faGithub} /> GitHub</h5>
                         </a>
                     </section>
